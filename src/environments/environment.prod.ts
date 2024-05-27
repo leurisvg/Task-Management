@@ -1,4 +1,4 @@
-export const environmentProd = {
+export const environment = {
   development: false,
-  apiUrl: 'PRODUCTION_API_URL',
+  apiUrl: 'PRODUCTION_API_URL'
 };

@@ -1,27 +1,73 @@
-# TaskManagement
+# Task Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Esta es una aplicación web frontend desarrollada con Angular 17 que simula la gestión de usuarios y tareas. La aplicación utiliza autenticación con JWT, realiza solicitudes HTTP para datos mockeados, emplea Angular Material para el diseño CSS y es responsiva. Se utilizan entornos de Angular para compilar a diferentes ambientes (dev, qa, prod) y Jest para las pruebas unitarias.
 
-## Development server
+## Instalación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clonar el repositorio:
 
-## Code scaffolding
+```
+  git clone https://github.com/leurisvg/task-management.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Instalar las dependencias:
 
-## Build
+```
+  npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Correr el servidor de desarrollo:
 
-## Running unit tests
+```
+  ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Open the App:
 
-## Running end-to-end tests
+Abre el navegador web y navega a http://localhost:4200 para visualizar la app.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Configuración de Entornos
 
-## Further help
+La aplicación utiliza diferentes configuraciones para los entornos de desarrollo, QA y producción. Estos entornos se gestionan a través de los archivos en la carpeta src/environments.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- src/environments/environment.development.ts: Entorno de desarrollo.
+- src/environments/environment.qa.ts: Entorno de QA.
+- src/environments/environment.prod.ts: Entorno de producción.
+
+## Compilar para Diferentes Ambientes
+
+### Desarrollo
+
+```
+  ng serve
+```
+
+### QA
+
+```
+  npm run build:qa
+```
+
+### Producción
+
+```
+  npm run build:prod
+```
+
+### Pruebas Unitarias
+
+Las pruebas se encuentran en los archivos con extensión .spec.ts.
+
+Para ejecutar las pruebas unitarias corra el siguiente comando:
+
+```
+  npm run test
+```
+
+Al ejecutar las pruebas, se generará un reporte en la terminal con la cantidad de pruebas ejecutadas, aprobadas y fallidas.
+
+Para ver el reporte de los test y saber el porcentaje del código cubierto por los test corra el siguiente comando:
+
+```
+  npm run test:coverage
+```

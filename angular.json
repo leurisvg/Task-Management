@@ -90,6 +90,9 @@
             },
             "development": {
               "buildTarget": "task-management:build:development"
+            },
+            "qa": {
+              "buildTarget": "task-management:build:qa"
             }
           },
           "defaultConfiguration": "development"

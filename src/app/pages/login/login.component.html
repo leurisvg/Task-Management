@@ -1,0 +1,44 @@
+<h1 class="title">Task Manager</h1>
+
+<mat-card class="card">
+	<mat-card-content>
+		<h1>Login</h1>
+
+		<form
+			[formGroup]="loginForm"
+			(ngSubmit)="login()"
+		>
+			<mat-form-field class="">
+				<mat-label>Email</mat-label>
+
+				<input
+					type="email"
+					matInput
+					formControlName="email"
+					placeholder="john@doe.com"
+				>
+			</mat-form-field>
+
+			<mat-form-field class="">
+				<mat-label>Password</mat-label>
+
+				<input
+					type="password"
+					matInput
+					formControlName="password"
+					placeholder="1234"
+				>
+			</mat-form-field>
+
+			<div class="btn-container">
+				<button
+					mat-flat-button
+					color="primary"
+					type="submit"
+				>
+					Login
+				</button>
+			</div>
+		</form>
+	</mat-card-content>
+</mat-card>

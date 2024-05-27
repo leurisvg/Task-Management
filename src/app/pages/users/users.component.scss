@@ -1,0 +1,15 @@
+h1 {
+  margin-top: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.action-btn-container {
+  display: flex;
+  column-gap: 10px;
+}

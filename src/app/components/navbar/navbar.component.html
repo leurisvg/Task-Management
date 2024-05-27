@@ -1,0 +1,16 @@
+<div class="btn-container">
+	<button
+		mat-stroked-button
+		color="primary"
+		(click)="changePage()"
+	>
+		Manage {{ isTaskPage() ? 'Tasks' : 'Users' }}
+	</button>
+	<button
+		mat-stroked-button
+		color="warn"
+		(click)="logout()"
+	>
+		Logout
+	</button>
+</div>

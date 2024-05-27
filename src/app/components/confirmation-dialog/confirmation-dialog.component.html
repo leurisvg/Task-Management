@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Delete {{ data.isUser ? 'User' : 'Task' }}</h2>
+<mat-dialog-content>
+	Would you like to delete "{{ data.name }}"?
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+	<button mat-button [mat-dialog-close]="false">Cancel</button>
+	<button mat-button color="warn" [mat-dialog-close]="true">Delete</button>
+</mat-dialog-actions>
